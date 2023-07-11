@@ -251,7 +251,7 @@ const ShibaPage = () => {
                     >
                         <h1>Shiba Inu Dango</h1>
                         <h3>Experience Cuteness</h3>
-                        <p>Adorable dog dango. Perfect for any occasion.
+                        <p>Adorable dog dango inspired by those fluffy potatoes.
                         </p>
                             
                     </motion.div>

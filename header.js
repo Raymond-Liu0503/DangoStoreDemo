@@ -11,7 +11,7 @@ function HeaderBar(){
         <div className="header">
             <div className="Title">
                 <Link to="/" style={{'text-decoration':'none', 'color':'Black'}}>
-                    <h1>DanGo!</h1>
+                    <h1>Dango!</h1>
                 </Link>
             </div>
             <div style={{'position':'relative'}}>

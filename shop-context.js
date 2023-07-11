@@ -75,7 +75,7 @@ function RemoveFromCart(item){
     }
 }
 
-    const contextValue = {cartItems, CartLength, AddToCart, lastCartItem, DecreaseQuantity, 
+    const contextValue = {cartItems, setCartItems, CartLength, AddToCart, lastCartItem, DecreaseQuantity, 
         IncreaseQuantity, TotalPrice, calculateTotalPrice, RemoveFromCart, setDeliveryState, 
         deliveryState, error, setError, address, setAddress, name, setName};
     

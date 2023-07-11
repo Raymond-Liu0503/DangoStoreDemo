@@ -82,7 +82,7 @@ const OrderItem = (props) => {
 
 export const Checkout = () => {
     
-    const {cartItems} = useContext(ShopContext);
+    const {cartItems, setCartItems} = useContext(ShopContext);
     const {TotalPrice} = useContext(ShopContext);
     const {deliveryState} = useContext(ShopContext);
     const [delivery, setDelivery] = useState(0);
@@ -114,16 +114,16 @@ export const Checkout = () => {
         if(deliveryState){
             if(address.length<=0 || name.length<=0 || Billing.length<=0 || !Billing.includes('@') || !Billing.includes('.') || cartItems.length<=0){
                 setError(true);
-                console.log("submit1");
             }else{
-                console.log("submit");
                 navigate("/order");
+                setCartItems([]);
         }
         }else{
             if(Billing.length<=0 || !Billing.includes('@') || !Billing.includes('.') || cartItems.length<=0){
                 setError(true);
             }else{
                 navigate("/order");
+                setCartItems([]);
             }
         }
     }
@@ -136,7 +136,7 @@ export const Checkout = () => {
                     {d} 
                     <div style={{'margin-left':'5%'}}>
                         <h1>Billing</h1>
-                        <p>E-Transfer raymondliusmailbox@gmail.com. I'm too lazy to set up the whole banking thing lol.</p>
+                        <p>E-Transfer me. I'm too lazy to set up the whole banking thing lol.</p>
                         <h4>Payment Email</h4>
                         <div>
                             <h3>Email</h3>
