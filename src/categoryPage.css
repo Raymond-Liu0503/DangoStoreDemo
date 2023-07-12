@@ -1,0 +1,51 @@
+.Category-page{
+    display: grid;
+    grid-template-rows: 40px 550px;
+    gap: 20px;
+}
+
+.prod-page{
+    display: flex;
+    
+}
+
+.fruit-img-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.cat-title{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#shop{
+    position: absolute;
+    top: 62%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    color: blue;
+}
+
+.cat-thumb-description{
+    position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.category-contents{
+    display: flex;
+    gap: 40px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+}
+
+.prod-cat-img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
